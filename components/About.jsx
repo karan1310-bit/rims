@@ -9,7 +9,7 @@ export default function PoetrySection() {
         {/* Title */}
         <div className="relative">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-semibold tracking-tight uppercase z-10 relative">
-            WHERE <span className="text-red-400">STYLE</span> MEETS SPEED
+            WHERE <span className="text-red-600">STYLE</span> MEETS SPEED
           </h2>
 
           {/* Large faded background text */}

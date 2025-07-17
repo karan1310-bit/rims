@@ -15,8 +15,8 @@ export default function HeroSlipstream() {
         />
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute top-[60%] md:top-[60%] left-4 md:left-20 -translate-y-1/2 text-white z-10 max-w-xl">
-          <h1 className="text-5xl md:text-6xl font-bold leading-tight">
+        <div className="absolute top-[80%] md:top-[70%] left-6 md:left-16 -translate-y-1/2 text-white z-10 max-w-xl">
+          <h1 className="text-5xl md:text-6xl font-bold leading-tighter">
             DRIVE WITH DISTINCTION
           </h1>
           <p className="mt-2 md:mt-4 text-lg md:text-xl text-gray-100 max-w-xs md:max-w-md">
