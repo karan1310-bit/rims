@@ -19,10 +19,10 @@ export default function HeroSlipstream() {
           <h1 className="text-5xl md:text-6xl font-bold leading-tight">
             DRIVE WITH DISTINCTION
           </h1>
-          <p className="mt-4 text-xl md:text-xl text-gray-100 max-w-md">
+          <p className="mt-4 text-lg md:text-xl text-gray-100 max-w-md">
              Premium wheels and accessories built for performance, precision, and style.
           </p>
-          <button className="mt-6 px-6 py-3 bg-white text-black font-semibold text-base rounded hover:bg-gray-200 transition">
+          <button className="mt-6 px-4 md:px-6 py-2 md:py-3 bg-white text-black font-semibold text-base rounded hover:bg-gray-200 transition">
             Explore Collections
           </button>
         </div>
