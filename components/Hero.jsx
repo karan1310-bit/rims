@@ -4,15 +4,16 @@ import Image from 'next/image';
 
 export default function HeroSlipstream() {
   return (
-    <section className="relative w-full min-h-screen bg-white">
+    <section className="relative w-full min-h-screen">
       <div className="relative w-full h-screen">
         <Image
-          src="/2.jpg" // Replace this with actual image path in /public
-          alt="Red car with Slipstream wheels"
-          fill
-          className="object-cover"
-          priority
-        />
+  src="/2.jpg"
+  alt="Red car with Slipstream wheels"
+  fill
+  className="object-cover"
+  sizes="(min-width: 1024px) 800px, 100vw"
+  priority
+/>
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-black/30" />
         <div className="absolute top-[80%] md:top-[70%] left-6 md:left-16 -translate-y-1/2 text-white z-10 max-w-xl">
