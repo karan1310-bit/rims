@@ -65,10 +65,9 @@ export default function Navbar() {
         <nav className="mt-10 flex flex-col gap-4 text-sm md:text-lg font-extralight">
           <Link href="/bucket-list" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Bucket List</Link>
           <Link href="/wheels" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Wheels</Link>
-          <Link href="/about" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">About</Link>
-          <Link href="/contact" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Rims</Link>
-          <Link href="/contact" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steering</Link>
-          <Link href="/contact" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Others</Link>
+          <Link href="/rims" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Rims</Link>
+          <Link href="/steerings" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steering</Link>
+          <Link href="/others" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Others</Link>
         </nav>
       </aside>
     </>
