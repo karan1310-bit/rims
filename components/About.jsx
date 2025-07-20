@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function PoetrySection() {
   return (
-    <section className="w-full bg-black text-white px-6 md:px-20 pt-8 md:py-20">
+    <section className="w-full bg-black text-white px-6 md:px-20 pt-8 md:pt-20 md:pb-12">
       <div className="max-w-7xl mx-auto flex flex-col items-center text-center space-y-12">
         {/* Title */}
         <div className="relative">
@@ -14,8 +14,8 @@ export default function PoetrySection() {
 
           {/* Large faded background text */}
           <div className="absolute inset-0 flex justify-center items-center pointer-events-none">
-            <h1 className="text-[20vw] font-bold opacity-5 leading-none mt-32 select-none hidden md:block">
-              ABOUT
+            <h1 className="text-[28vw] md:text-[20vw] font-bold opacity-5 md:opacity-7 leading-none mt-28 md:mt-32 select-none block">
+              DRIFT
             </h1>
           </div>
         </div>
@@ -47,7 +47,7 @@ export default function PoetrySection() {
         </div>
 
         {/* Centered Description */}
-        <div className="max-w-3xl text-sm md:text-base leading-relaxed text-gray-300 pt-0">
+        <div className="max-w-3xl text-sm md:text-lg leading-relaxed text-gray-300 pt-0">
           <p>
             Precision meets passion in every build. From hand-picked performance parts to expert tuning, our gear is engineered for those who live life in the fast lane.
           </p>

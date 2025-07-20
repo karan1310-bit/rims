@@ -1,10 +1,11 @@
 'use client'
 
-import SteeringProductGrid from '@/components/Steerings'
+import React, { useEffect } from 'react';
 import Lenis from '@studio-freight/lenis'
-import React, { useEffect } from 'react'
+import ProductDetail from '@/components/ProductDetails'
 
 const page = () => {
+
   useEffect(() => {
       const lenis = new Lenis()
   
@@ -22,8 +23,8 @@ const page = () => {
 
   return (
     <main className="min-h-screen w-full bg-black text-white">
-              <SteeringProductGrid />
-           </main>
+          <ProductDetail />
+        </main>
   )
 }
 

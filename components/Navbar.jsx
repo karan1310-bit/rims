@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import { IoMdMenu, IoMdClose } from 'react-icons/io';
+import Image from 'next/image';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,7 +21,7 @@ export default function Navbar() {
         </h1></Link>
         <button
           onClick={toggleMenu}
-          className="text-3xl focus:outline-none z-[999]"
+          className="text-3xl focus:outline-none z-[999] cursor-pointer"
           aria-label="Toggle menu"
         >
           <IoMdMenu />
@@ -45,16 +46,15 @@ export default function Navbar() {
         {/* ✕ Close Icon Inside Panel */}
         <div className="flex justify-between items-center">
           <img
-            src="https://get-jpn.com/cdn/shop/files/GETJAPANLLC.png?v=1737314620
-"
+            src="/hero.png"
             alt="Logo"
             width={56}
             height={56}
-            className="object-contain"
+            className="object-fill h-20 w-36 md:h-32 md:w-60"
           />
           <button
             onClick={closeMenu}
-            className="text-3xl hover:text-gray-400 transition"
+            className="text-base md:text-2xl hover:text-gray-400 transition"
             aria-label="Close menu"
           >
             <IoMdClose />
@@ -62,11 +62,11 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <nav className="mt-10 flex flex-col gap-4 text-sm md:text-lg font-extralight">
-          <Link href="/bucket-list" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Bucket List</Link>
+        <nav className="mt-10 flex flex-col gap-4 text-xs md:text-base font-extralight uppercase">
+          <Link href="/seats" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Seats</Link>
           <Link href="/wheels" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Wheels</Link>
           <Link href="/rims" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Rims</Link>
-          <Link href="/steerings" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steering</Link>
+          <Link href="/steerings" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steerings</Link>
           <Link href="/others" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Others</Link>
         </nav>
       </aside>

@@ -1,6 +1,6 @@
 'use client'
 
-import SteeringProductGrid from '@/components/Steerings'
+import Seats from '@/components/Seats'
 import Lenis from '@studio-freight/lenis'
 import React, { useEffect } from 'react'
 
@@ -22,7 +22,7 @@ const page = () => {
 
   return (
     <main className="min-h-screen w-full bg-black text-white">
-              <SteeringProductGrid />
+              <Seats />
            </main>
   )
 }

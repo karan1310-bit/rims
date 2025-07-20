@@ -5,7 +5,7 @@ import { client } from '@/sanity/lib/client';
 import { urlFor } from '@/sanity/lib/image';
 import Link from 'next/link';
 
-export default function RimsProductGrid() {
+export default function SteeringProductGrid() {
   const [products, setProducts] = useState([]);
   const [sortOption, setSortOption] = useState('newest');
 
@@ -29,7 +29,7 @@ export default function RimsProductGrid() {
           break;
       }
 
-      const query = `*[_type == "product" && category == "rims"] ${orderQuery} {
+      const query = `*[_type == "product" && category == "steering"] ${orderQuery} {
         _id,
         title,
         price,
@@ -49,11 +49,11 @@ export default function RimsProductGrid() {
     <section className="bg-black text-white w-full min-h-screen">
       <div className="max-w-9xl mx-auto px-4 md:px-16 pt-20 md:pt-24 md:py-12">
         <div className="text-sm md:text-lg text-gray-400 mb-4">
-          Home / Collections / <span className="text-white">Rims</span>
+          Home / Collections / <span className="text-white">Steerings</span>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-          <h1 className="text-2xl font-semibold">Rims</h1>
+          <h1 className="text-2xl font-semibold">Steerings</h1>
 
           <div className="flex items-center gap-2 text-xs md:text-sm">
             <label htmlFor="sort" className="text-gray-300 font-medium">
@@ -82,7 +82,7 @@ export default function RimsProductGrid() {
                   <img
                     src={urlFor(product.image).width(600).height(400).url()}
                     alt={product.title}
-                    className="object-cover w-full h-24 md:h-48 rounded-sm"
+                    className="object-cover w-full h-28 md:h-56 rounded-sm"
                   />
                 </div>
                 <h3 className="text-sm md:text-lg capitalize font-light mt-3 md:font-medium leading-tight">
