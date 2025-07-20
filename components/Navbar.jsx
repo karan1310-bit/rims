@@ -62,7 +62,7 @@ export default function Navbar() {
         </div>
 
         {/* Nav Links */}
-        <nav className="mt-10 flex flex-col gap-4 text-xs md:text-base font-extralight uppercase">
+        <nav className="mt-10 flex flex-col gap-4 text-sm md:text-base font-extralight uppercase">
           <Link href="/seats" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Seats</Link>
           <Link href="/wheels" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Wheels</Link>
           <Link href="/rims" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Rims</Link>
