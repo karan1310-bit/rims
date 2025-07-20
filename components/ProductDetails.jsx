@@ -66,7 +66,7 @@ export default function ProductDetail() {
               {product.title}
             </h1>
 
-            <ul className="space-y-1 text-base md:text-lg text-gray-300 capitalize leading-relaxed max-w-md">
+            <ul className="space-y-1 text-base md:text-lg text-gray-300 capitalize leading-relaxed max-w-xl">
               {product.descriptionPoints?.map((line, i) => (
                 <li key={i}>★ {line}</li>
               ))}
