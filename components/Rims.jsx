@@ -15,10 +15,10 @@ export default function RimsProductGrid() {
 
       switch (sortOption) {
         case 'price_low':
-          orderQuery = '| order(price asc)';
+          orderQuery = '| order(price desc)';
           break;
         case 'price_high':
-          orderQuery = '| order(price desc)';
+          orderQuery = '| order(price asc)';
           break;
         case 'rating':
           orderQuery = '| order(conditionRating desc)';
