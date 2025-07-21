@@ -49,11 +49,11 @@ export default function SeatsProductGrid() {
     <section className="bg-black text-white w-full min-h-screen">
       <div className="max-w-9xl mx-auto px-4 md:px-16 pt-20 md:pt-24 md:py-12">
         <div className="text-sm md:text-lg text-gray-400 mb-4">
-          Home / Collections / <span className="text-white">Seats</span>
+          Home / Collections / <span className="text-white">Racing Seats</span>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-6 gap-4">
-          <h1 className="text-2xl font-semibold">Seats</h1>
+          <h1 className="text-2xl font-semibold">Racing Seats</h1>
 
           <div className="flex items-center gap-2 text-xs md:text-sm">
             <label htmlFor="sort" className="text-gray-300 font-medium">

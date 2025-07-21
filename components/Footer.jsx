@@ -3,7 +3,8 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { FaInstagram, FaFacebookF, FaYoutube } from 'react-icons/fa'
-import { BsWhatsapp } from 'react-icons/bs'
+import { BsMailbox, BsWhatsapp } from 'react-icons/bs'
+import { IoMdMail } from 'react-icons/io'
 
 export default function Footer() {
   return (
@@ -22,10 +23,8 @@ export default function Footer() {
           </div>
 
           <div className="flex space-x-4 text-gray-400 text-xl">
-            <a href="https://wa.me/917225928721" target="_blank" rel="noopener noreferrer"><BsWhatsapp /></a>
-            <a href="https://instagram.com/panesarmotorsports" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
-            <a href="https://facebook.com/panesarmotorsports" target="_blank" rel="noopener noreferrer"><FaFacebookF /></a>
-            <a href="https://youtube.com/@panesarmotorsports" target="_blank" rel="noopener noreferrer"><FaYoutube /></a>
+            <a href="mailto:guggspaji12@hotmail.com" target="_blank" rel="noopener noreferrer"><IoMdMail /></a>
+            <a href="https://www.instagram.com/panesar.motorsports?igsh=MXEyZ2hkZTJ2OWQzeQ==" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
           </div>
 
           <div className="text-xs md:text-sm text-gray-400 md:pt-6">© 2025 Panesar Motorsports. All rights reserved.</div>
@@ -35,11 +34,11 @@ export default function Footer() {
         <div>
           <h3 className="text-sm font-semibold mb-4">Shop</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><Link href="//wheels">Wheels</Link></li>
-            <li><Link href="/rims">Rims</Link></li>
-            <li><Link href="/steerings">Racing Seats</Link></li>
-            <li><Link href="/tyres">Tyres</Link></li>
-            <li><Link href="/others">Others</Link></li>
+            <li><Link href="/wheels">Wheels</Link></li>
+            <li><Link href="/accessories">Accessories</Link></li>
+            <li><Link href="/seats">Racing Seats</Link></li>
+            <li><Link href="/steerings">Steering Wheels</Link></li>
+            <li><Link href="/extras">Extras</Link></li>
           </ul>
         </div>
 

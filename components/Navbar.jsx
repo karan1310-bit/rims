@@ -14,11 +14,15 @@ export default function Navbar() {
   return (
     <>
       {/* Top Navbar */}
-      <nav className="fixed top-0 left-0 w-full z-50 bg-black text-white px-4 md:px-12 py-4 md:py-5 flex justify-between items-center">
+      <nav className="fixed top-0 left-0 w-full z-50 bg-black text-white px-4 md:px-12 py-4 md:py-3 flex justify-between items-center">
         <Link href="/">
-        <h1 className="text-base md:text-lg font-bold tracking-normal uppercase">
-         Panesar Motorsports
-        </h1></Link>
+        <img
+    src="/hero.png" // Replace with your actual logo path
+    alt="Panesar Motorsports Logo"
+    width={36}
+    height={36}
+    className="object-fill w-24 h-12 md:w-44 md:h-20"
+  /></Link>
         <button
           onClick={toggleMenu}
           className="text-3xl focus:outline-none z-[999] cursor-pointer"
@@ -63,11 +67,11 @@ export default function Navbar() {
 
         {/* Nav Links */}
         <nav className="mt-10 flex flex-col gap-4 text-sm md:text-base font-extralight uppercase">
-          <Link href="/seats" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Seats</Link>
           <Link href="/wheels" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Wheels</Link>
-          <Link href="/rims" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Rims</Link>
-          <Link href="/steerings" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steerings</Link>
-          <Link href="/others" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Others</Link>
+          <Link href="/seats" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Racing Seats</Link>
+          <Link href="/steerings" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steerings Wheels</Link>
+          <Link href="/accessories" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Accessories</Link>
+          <Link href="/extras" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Extras</Link>
         </nav>
       </aside>
     </>
