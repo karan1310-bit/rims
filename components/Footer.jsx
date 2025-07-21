@@ -56,8 +56,8 @@ export default function Footer() {
         <div className="">
           <h3 className="text-sm font-semibold mb-4">Company</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><Link href="/contact">236-880-5446</Link></li>
-            <li><Link href="/careers">Surrey, BC, Canada</Link></li>
+            <li><Link href="/">236-880-5446</Link></li>
+            <li><Link href="/">Surrey, BC, Canada</Link></li>
           </ul>
         </div>
 
