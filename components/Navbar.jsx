@@ -21,7 +21,7 @@ export default function Navbar() {
     alt="Panesar Motorsports Logo"
     width={36}
     height={36}
-    className="object-fill w-24 h-12 md:w-44 md:h-20"
+    className="object-fill w-24 h-12 md:w-40 md:h-20"
   /></Link>
         <button
           onClick={toggleMenu}

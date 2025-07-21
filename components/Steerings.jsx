@@ -47,7 +47,7 @@ export default function SteeringProductGrid() {
 
   return (
     <section className="bg-black text-white w-full min-h-screen">
-      <div className="max-w-9xl mx-auto px-4 md:px-16 pt-20 md:pt-24 md:py-12">
+      <div className="max-w-9xl mx-auto px-4 md:px-16 pt-20 md:pt-28 md:py-12">
         <div className="text-sm md:text-lg text-gray-400 mb-4">
           Home / Collections / <span className="text-white">Steering Wheels</span>
         </div>
