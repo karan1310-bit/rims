@@ -47,8 +47,8 @@ export default function PoetrySection() {
         </div>
 
         {/* Centered Description */}
-        <div className="md:max-w-4xl text-base md:text-lg leading-normal text-gray-300">
-          <h2>Panesar Motorsports was built by car enthusiasts—for car enthusiasts.</h2>
+        <div className="md:max-w-4xl text-base md:text-lg leading-tight text-gray-300">
+          <h2>Panesar Motorsports is built by car enthusiasts—for car enthusiasts.</h2>
           <p className='text-sm md:text-lg pt-2 max-w-xs md:max-w-3xl'>
             Based in Surrey, BC, we specialize in custom forged wheels, racing seats, steering wheels, and JDM vehicle import services. Whether you're chasing the perfect fitment, hunting for a clean Skyline or Chaser, or building your dream stance setup—we’re here to make it happen.
           </p>

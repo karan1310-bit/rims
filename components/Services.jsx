@@ -9,11 +9,8 @@ const Services = () => {
             Custom <span className="text-red-600">Imported </span>
           </h2>
       <div className="flex flex-col md:flex-row gap-4 md:gap-4 justify-center items-stretch">
-
-        
-
         {/* Custom Forged Wheels Block */}
-        <div className="w-full md:w-1/2 aspect-[1/1] md:aspect-[4/3] relative rounded-2xl overflow-hidden shadow-lg group">
+        <div className="w-full md:w-1/2 h-[45vh] md:h-[70vh] md:aspect-[4/3] relative rounded-2xl overflow-hidden shadow-lg group">
           <img
             src="/5.jpg"
             alt="Custom Forged Wheels"
@@ -38,7 +35,7 @@ const Services = () => {
         </div>
 
         {/* JDM Import Service Block */}
-        <div className="w-full md:w-1/2 aspect-[1/1] md:aspect-[4/3] relative rounded-2xl overflow-hidden shadow-lg group">
+        <div className="w-full md:w-1/2 h-[45vh] md:h-[70vh] md:aspect-[4/3] relative rounded-2xl overflow-hidden shadow-lg group">
           <Image
             src="/8.jpg"
             alt="JDM Import Service"
