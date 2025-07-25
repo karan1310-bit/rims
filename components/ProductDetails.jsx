@@ -18,7 +18,6 @@ export default function ProductDetail() {
   price,
   images,
   category,
-  conditionRating,
   descriptionPoints,
       }`;
       const data = await client.fetch(query, { slug });
@@ -31,7 +30,7 @@ export default function ProductDetail() {
   if (!product) return <div className="text-white p-10">Loading...</div>;
 
   return (
-    <section className="w-full bg-black text-white min-h-screen px-4 md:px-16 pt-20 md:py-24">
+    <section className="w-full bg-black text-white min-h-screen px-4 md:px-16 pt-20 md:pt-28 md:pb-8">
       <div className="max-w-8xl mx-auto space-y-10">
         <nav className="text-base md:text-lg text-gray-400">
           Home / {product.category} /{' '}
@@ -70,9 +69,7 @@ export default function ProductDetail() {
               {product.descriptionPoints?.map((line, i) => (
                 <li key={i}>★ {line}</li>
               ))}
-              <li>
-                ★ Condition: <span className="text-white font-medium">{product.conditionRating}</span>
-              </li>
+              
             </ul>
 
             <p className="text-2xl md:text-3xl font-medium text-white">$ {product.price}</p>

@@ -51,13 +51,6 @@ export const productType = defineType({
       type: 'array',
       of: [{ type: 'string' }],
     }),
-    
-    defineField({
-      name: 'conditionRating',
-  title: 'Condition Rating (e.g. 9.3)',
-  type: 'number', // change from 'string' to 'number'
-  validation: (Rule) => Rule.min(0).max(10),
-    }),
     defineField({
       name: 'category',
       title: 'Category',

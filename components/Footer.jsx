@@ -62,12 +62,12 @@ export default function Footer() {
         </div>
 
         {/* Legal */}
-        <div className="hidden md:block">
+        <div className="">
           <h3 className="text-sm font-semibold mb-4">Legal</h3>
           <ul className="space-y-2 text-sm text-gray-400">
-            <li><Link href="/privacy">Privacy Policy</Link></li>
-            <li><Link href="/terms">Terms of Service</Link></li>
-            <li><Link href="/refund">Refund Policy</Link></li>
+            <li><Link href="/t&c">Privacy Policy</Link></li>
+            <li><Link href="/t&c">Terms of Service</Link></li>
+            <li><Link href="/t&c">Refund Policy</Link></li>
           </ul>
         </div>
       </div>
@@ -76,7 +76,7 @@ export default function Footer() {
       <div className="md:mt-6 flex flex-col md:flex-row md:justify-between md:items-center gap-4">
         <div className="text-sm text-gray-400"></div>
         <div className="text-sm text-gray-400">
-          Built by Racers, for Racers
+          Drive With Distinction
         </div>
       </div>
     </footer>

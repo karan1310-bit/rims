@@ -15,13 +15,12 @@ export default function SeatsProductGrid() {
 
       switch (sortOption) {
         case 'price_low':
-          orderQuery = '| order(price desc)';
-          break;
-        case 'price_high':
+          // Convert to number explicitly and sort ascending (low to high)
           orderQuery = '| order(price asc)';
           break;
-        case 'rating':
-          orderQuery = '| order(conditionRating desc)';
+        case 'price_high':
+          // Convert to number explicitly and sort descending (high to low)
+          orderQuery = '| order(price desc)';
           break;
         case 'newest':
         default:
@@ -33,13 +32,33 @@ export default function SeatsProductGrid() {
         _id,
         title,
         price,
-        conditionRating,
         "image": images[0],
         slug
       }`;
 
-      const data = await client.fetch(query);
-      setProducts(data);
+      try {
+        const data = await client.fetch(query);
+        
+        // Additional client-side sorting as fallback for decimal precision issues
+        if (sortOption === 'price_low' || sortOption === 'price_high') {
+          const sortedData = [...data].sort((a, b) => {
+            const priceA = parseFloat(a.price) || 0;
+            const priceB = parseFloat(b.price) || 0;
+            
+            if (sortOption === 'price_low') {
+              return priceA - priceB; // Low to high
+            } else {
+              return priceB - priceA; // High to low
+            }
+          });
+          setProducts(sortedData);
+        } else {
+          setProducts(data);
+        }
+      } catch (error) {
+        console.error('Error fetching products:', error);
+        setProducts([]);
+      }
     };
 
     fetchProducts();
@@ -47,7 +66,7 @@ export default function SeatsProductGrid() {
 
   return (
     <section className="bg-black text-white w-full min-h-screen">
-      <div className="max-w-9xl mx-auto px-4 md:px-16 pt-20 md:pt-28 md:py-12">
+      <div className="max-w-9xl mx-auto px-4 md:px-16 pt-20 md:pt-32 md:py-12">
         <div className="text-sm md:text-lg text-gray-400 mb-4">
           Home / Collections / <span className="text-white">Racing Seats</span>
         </div>
@@ -69,7 +88,6 @@ export default function SeatsProductGrid() {
               <option value="newest">Newest</option>
               <option value="price_low">Price: Low to High</option>
               <option value="price_high">Price: High to Low</option>
-              <option value="rating">Rating</option>
             </select>
           </div>
         </div>
@@ -88,7 +106,9 @@ export default function SeatsProductGrid() {
                 <h3 className="text-sm md:text-lg capitalize font-light mt-3 md:font-medium leading-tight">
                   {product.title}
                 </h3>
-                <p className="text-sm md:text-base text-gray-400">$ {product.price}</p>
+                <p className="text-sm md:text-base text-gray-400">
+                  $ {typeof product.price === 'number' ? product.price.toFixed(2) : product.price}
+                </p>
               </article>
             </Link>
           ))}

@@ -31,11 +31,11 @@ export default function FeaturedSection() {
           {products.map((product) => (
             <Link key={product._id} href={`/product/${product.slug.current}`}>
               <article className="text-white cursor-pointer hover:opacity-90 transition">
-                <div className="w-full h-fit relative">
+                <div className="w-full h-fit relative ">
                   <img
                     src={urlFor(product.image).width(600).height(400).url()}
                     alt={product.title}
-                    className="object-cover w-full h-28 md:h-56 rounded-sm"
+                    className="object-cover w-full h-28 md:h-56 rounded-sm "
                   />
                 </div>
                 <h3 className="mt-2 text-sm md:text-lg capitalize font-light md:font-semibold leading-snug">

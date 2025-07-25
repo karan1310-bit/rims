@@ -72,6 +72,8 @@ export default function Navbar() {
           <Link href="/steerings" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Steerings Wheels</Link>
           <Link href="/accessories" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Accessories</Link>
           <Link href="/extras" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Extras</Link>
+          <Link href="/custom" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">Custom Forged Wheels</Link>
+          <Link href="/import" onClick={closeMenu} className="hover:text-gray-400 transition border-b border-gray-900 pb-2">JDM Import Service</Link>
         </nav>
       </aside>
     </>
