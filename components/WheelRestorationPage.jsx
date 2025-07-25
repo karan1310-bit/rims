@@ -167,7 +167,7 @@ const GALLERY_IMAGES = [
   // Replace all of these with real image paths/sizes you have in /public
   { src: "/images/1.jpg", alt: "Wheel 1", w: 800, h: 600 },
   { src: "/images/2.jpg", alt: "Wheel 2", w: 800, h: 600 },
-  { src: "/images/3.jpg", alt: "Wheel 3", w: 800, h: 600 },
+  { src: "/images/3.jpg", alt: "Wheel 10", w: 800, h: 600 },
   { src: "/images/4.jpg", alt: "Wheel 4", w: 800, h: 600 },
   { src: "/images/5.jpg", alt: "Wheel 5", w: 800, h: 600 },
   { src: "/images/6.jpg", alt: "Wheel 6", w: 800, h: 600 },
