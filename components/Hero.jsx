@@ -16,15 +16,15 @@ export default function HeroSlipstream() {
         />
         {/* Overlay Content */}
         <div className="absolute inset-0 bg-black/30" />
-        <div className="absolute top-[80%] md:top-[72%] left-6 md:left-14 -translate-y-1/2 text-white z-10 max-w-lg">
+        <div className="absolute top-[80%] md:top-[72%] left-5 md:left-14 -translate-y-1/2 text-white z-10 max-w-80 md:max-w-lg">
           <h1 className="text-5xl md:text-7xl font-bold leading-tighter uppercase">
-            Elevate Your Drive
+            Elevate Your <span className="text-red-500">Drive</span>
           </h1>
-          <p className="mt-2 md:mt-3 text-[16px] md:text-xl text-gray-100 max-w-xs md:max-w-md">
+          <p className="mt-2 md:mt-2 text-[16px] md:text-xl text-gray-100 max-w-xs md:max-w-md">
              Premium forged wheels, flow formed wheels and much more
           </p>
           <Link href="/wheels">
-  <button className="mt-4 md:mt-4 px-4 md:px-6 py-2 md:py-3 bg-white text-black font-semibold text-sm md:text-base rounded hover:bg-gray-200 transition cursor-pointer">
+  <button className="mt-3 md:mt-3 px-4 md:px-6 py-2 md:py-3 bg-white text-black font-semibold text-sm md:text-base rounded hover:bg-gray-200 transition cursor-pointer">
     Explore Collections
   </button>
 </Link>

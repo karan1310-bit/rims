@@ -25,7 +25,7 @@ const Services = () => {
               <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-1 md:mb-2">
                 Custom Forged Wheels
               </h3>
-              <p className="text-sm md:text-lg max-w-3xs md:max-w-md leading-normal mb-2 md:mb-4">
+              <p className="text-sm md:text-lg max-w-3xs md:max-w-md leading-tight md:leading-normal mb-2 md:mb-3">
              We specialize in fully custom, made-to-order forged wheels that are tailored to your exact needs.
               </p>
                <Link href="/custom">
@@ -50,7 +50,7 @@ const Services = () => {
               <h3 className="text-2xl md:text-3xl font-bold tracking-tight mb-1 md:mb-2">
                 JDM Import Service
               </h3>
-              <p className="text-sm md:text-lg md:max-w-sm leading-normal mb-2 md:mb-4">
+              <p className="text-sm md:text-lg max-w-2xs md:max-w-sm leading-tight md:leading-normal mb-2 md:mb-3">
                 Looking to import a JDM car from Japan? We’ve got you covered — end to end.
               </p>
               <Link href="/import">

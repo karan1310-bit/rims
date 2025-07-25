@@ -101,9 +101,9 @@ export default function WheelRestorationPage() {
   {/* Optional CTA */}
   <div className="mt-4 md:mt-8">
     <a
-  href={`mailto:guggspaji12@hotmail.com?subject=${encodeURIComponent(
-    "Hi, I'm interested in purchasing custom wheels. can you provide more details?"
-  )}`}
+  href={`sms:+12368805446?body=${encodeURIComponent(
+      `Hi, I’m interested in your custom forged wheels. Could you provide details on pricing, options, and lead time?`
+    )}`}
   className="inline-flex items-center justify-center text-center bg-gray-100 text-black font-semibold px-6 capitalize py-3 text-sm md:text-lg rounded transition-all duration-300 hover:bg-black hover:text-white hover:scale-105 border border-white"
   aria-label="Send email inquiry about custom wheels"
 >
